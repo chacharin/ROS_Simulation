@@ -21,4 +21,26 @@
       
 เปิด Bot ใน Gazebo
 
+      $ export TURTLEBOT3_MODEL=burger
+      
+      $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
+      
+เปิดรีโมท teleop_key
+      
+      $ export TURTLEBOT3_MODEL=burger
+
+      $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+      
+      
+เปิด SLAM
+
+      $ export TURTLEBOT3_MODEL=burger
+      
+      $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
+      
+      ในกรณีต้องการ Save Map 
+      
+      $ rosrun map_server map_saver -f ~/map
+      
+      
       
