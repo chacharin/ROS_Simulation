@@ -42,5 +42,9 @@
       
       $ rosrun map_server map_saver -f ~/map
       
-      
+การใช้ Navigation
+
+      $ export TURTLEBOT3_MODEL=burger
+
+      $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
       
